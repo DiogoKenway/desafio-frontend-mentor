@@ -104,8 +104,10 @@ const SectionInfo = styled.section`
         align-items: center;
         justify-content: start;
         width: 100%;
-        height: 100%;
-        gap: 0;
+        height: 40%;
+        // gap: 1rem;
+        // border: solid 1px red;
+        padding:  0;
     }
 `
 
@@ -209,9 +211,9 @@ const RoleInformation = styled.div`
     }
 
     @media(max-width: 450px) {
-        // border: solid 2px #99bb20;
-        height: 50%;
-        width: 75%;
+        // border: solid 1px #99bb20;
+        height: 60%;
+        width: 90%;
         gap: 0;
         padding: 3rem 1rem;
         justify-content: center;
@@ -219,6 +221,7 @@ const RoleInformation = styled.div`
         p {
             font-size: 15px;
             line-height: 25px;
+            // padding-bottom: 1rem;
         }
 
         h3 {
@@ -246,8 +249,12 @@ const NavigationPoints = styled.div`
     }
 
     @media(max-width: 450px) {
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
         order: -1;
-        margin: 2rem 0;
+        // margin: 2rem 0;
     }
 `
 
@@ -286,7 +293,7 @@ const SectionPhoto = styled.section`
 
     @media(max-width: 450px) {
         order: -1;
-        transform: translate(0, 40px);
+        transform: translate(0, -20px);
         border-bottom: solid 1px #383B4B;
         width: 95%;
 

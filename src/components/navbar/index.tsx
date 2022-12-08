@@ -61,18 +61,18 @@ const Navbar = ({ currentRoute }: { currentRoute: string }) => {
                 <img id="logo" src={logo} alt="logo do site" />
                 <hr id="line"/>
             </Logo>
-            <MenuMobile 
+            <MenuMobile onClick={() => setShowMenu(!showMenu)} 
                 style={showMenu || width > 450 ? { display: "none" } : { display: "initial" }}
                >
                 <img src={openIcon}
-                    onClick={() => setShowMenu(!showMenu)}
+                    
                     alt="icone para abrir menu" />
             </MenuMobile>
             <NavigationBar id="navbar" style={showMenu || width > 450 ? { right: "0" } : { right: "-100vw" }}>
-                <CloseIcon>
+                <CloseIcon onClick={() => setShowMenu(!showMenu)}>
                     <img src={closeIcon}
                         alt="icone de fechar menu"
-                        onClick={() => setShowMenu(!showMenu)} />
+                         />
                 </CloseIcon>
                 <li>
                     <Link to="/home"

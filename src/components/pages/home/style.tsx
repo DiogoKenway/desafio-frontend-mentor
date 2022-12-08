@@ -46,11 +46,10 @@ const WrapperHome = styled.section`
 
     @media(max-width: 450px) {
         width: 100vw;
-        height: 95vh;
-        gap: 0;
-        justify-content: space-around;
-        // padding: 2rem 0;
-        // border: solid 5px #f1f2aa;
+        height: 88vh;
+        justify-content: start;
+        padding: 2rem 0;
+        // border: solid 1px #f1f2aa;
     }
 `
 
@@ -126,9 +125,9 @@ const InfoHome = styled.div`
         width: 100%;
         height: 70%;
         padding: 0 1rem;
-        justify-content: center;
+        justify-content: start;
         align-items: center;
-        gap: 0;
+        gap: .5rem;
 
         h2 {
             letter-spacing: 4px;
@@ -175,8 +174,8 @@ const BtnExplore = styled.div`
     }
 
     @media(max-width: 450px) {
-        width: 170px;
-        height: 170px;
+        width: 150px;
+        height: 150px;
         margin-bottom: 15%;
 
         a {

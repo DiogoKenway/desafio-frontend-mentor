@@ -21,7 +21,7 @@ import {
     Dot
 } from "./style";
 
-const Crew = (props: any) => {
+const Crew = () => {
 
     useEffect(() => {
 

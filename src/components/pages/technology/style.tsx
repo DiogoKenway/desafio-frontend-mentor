@@ -50,7 +50,7 @@ const Container = styled.div`
         width: 100vw;
         flex-direction: column;
         padding: 1rem 0;
-        gap: 2rem;
+        gap: 1rem;
     }
 `
 

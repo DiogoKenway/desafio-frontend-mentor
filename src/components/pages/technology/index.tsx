@@ -21,7 +21,7 @@ import {
     ContainerImage
 } from "./style";
 
-const Technology = (props: any) => {
+const Technology = () => {
 
     const [showMenu, setShowMenu] = useState(true);
 
@@ -39,12 +39,12 @@ const Technology = (props: any) => {
     useEffect(() => {
         const tl = gsap.timeline();
 
-        tl.fromTo("#bg", { opacity: 0 }, { opacity: 1 , duration: 3 }, 1);
-        tl.fromTo("#title-tech", { opacity: 0, x: "-1200px" }, { opacity: 1, x: "0px"}, 1);
-        tl.fromTo("#dots-tech", { opacity: 0, y: "1500px" }, { opacity: 1, y: "0px" }, 1.1);
-        tl.fromTo("#name-tech", { y: "-1000px" }, { y: "0px"}, 1.2);
-        tl.fromTo("#info-tech", { y: "1000px" }, { y: "0px"}, 1.2);
-        tl.fromTo("#img-tech", { opacity: 0 }, { opacity: 1, delay: .2 }, 1.3);
+        // tl.fromTo("#bg", { opacity: 0 }, { opacity: 1 , duration: 3 }, 1);
+        // tl.fromTo("#title-tech", { opacity: 0, x: "-1200px" }, { opacity: 1, x: "0px"}, 1);
+        // tl.fromTo("#dots-tech", { opacity: 0, y: "1500px" }, { opacity: 1, y: "0px" }, 1.1);
+        // tl.fromTo("#name-tech", { y: "-1000px" }, { y: "0px"}, 1.2);
+        // tl.fromTo("#info-tech", { y: "1000px" }, { y: "0px"}, 1.2);
+        // tl.fromTo("#img-tech", { opacity: 0 }, { opacity: 1, delay: .2 }, 1.3);
 
     }, []);
 

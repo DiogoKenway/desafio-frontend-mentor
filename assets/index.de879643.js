@@ -364,7 +364,7 @@ Error generating stack: `+o.message+`
 
     @media(max-width: 450px) {
         width: 100vw;
-        height: 90vh;
+        height: 100vh;
         gap: 0;
         justify-content: space-around;
         // padding: 2rem 0;
@@ -484,12 +484,13 @@ Error generating stack: `+o.message+`
     @media(max-width: 768px) {
         width: 33vw;
         height: 33vw;
+        margin-bottom: 10%;
     }
 
     @media(max-width: 450px) {
-        width: 160px;
-        height: 160px;
-        margin-bottom: 5%;
+        width: 170px;
+        height: 170px;
+        margin-bottom: 17%;
 
         a {
             font-family: Bellefair;

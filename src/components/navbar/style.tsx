@@ -66,6 +66,7 @@ const MenuMobile = styled.div`
 
     @media (max-width: 450px) {
         display: flex;
+        padding: 12px;
         justify-content: flex-end;
         align-items: center;
         margin-top: 1.5rem;

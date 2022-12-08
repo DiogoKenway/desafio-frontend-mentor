@@ -47,18 +47,17 @@ const WrapperHome = styled.section`
     @media(max-width: 450px) {
         width: 100%;
         height: 90vh;
-        justify-content: center;
-        padding: 3rem 1rem;
+        justify-content: space-around;
+        // padding: 2rem 1rem;
         // border: solid 3px #f1f2aa;
     }
 `
 
 const InfoHome = styled.div`
-    width: 40%;
+    width: 30%;
     height: 100%;
     display: flex;
     flex-direction: column;
-    cc
     gap: 3rem;
     justify-content: end;
     align-items: center;
@@ -140,7 +139,6 @@ const InfoHome = styled.div`
             font-family: Bellefair;
             line-height: 100px;
             font-size: 5rem;
-
         }
 
         p {

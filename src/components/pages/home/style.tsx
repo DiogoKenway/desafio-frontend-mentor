@@ -174,9 +174,19 @@ const BtnExplore = styled.div`
     }
 
     @media(max-width: 450px) {
-        width: 45vw;
-        height: 45vw;
+        width: 170px;
+        height: 170px;
         margin-bottom: 3rem;
+
+        a {
+            font-family: Bellefair;
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 23px;
+            letter-spacing: 1.25px;
+            text-align: center;
+
+        }
     }
 
     &:hover {

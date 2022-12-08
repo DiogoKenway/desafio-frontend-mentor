@@ -487,6 +487,7 @@ Error generating stack: `+o.message+`
     @media(max-width: 450px) {
         width: 45vw;
         height: 45vw;
+        margin-bottom: 1rem;
     }
 
     &:hover {

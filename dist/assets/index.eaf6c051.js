@@ -364,11 +364,11 @@ Error generating stack: `+o.message+`
 
     @media(max-width: 450px) {
         width: 100vw;
-        height: 100vh;
+        height: 90vh;
         gap: 0;
-        justify-content: center;
+        justify-content: space-around;
         // padding: 2rem 0;
-        // border: solid 3px #f1f2aa;
+        // border: solid 5px #f1f2aa;
     }
 `,gx=G.div`
     width: 30%;
@@ -487,9 +487,9 @@ Error generating stack: `+o.message+`
     }
 
     @media(max-width: 450px) {
-        width: 170px;
-        height: 170px;
-        margin-bottom: 3rem;
+        width: 160px;
+        height: 160px;
+        margin-bottom: 5%;
 
         a {
             font-family: Bellefair;

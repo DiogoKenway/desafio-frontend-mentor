@@ -365,11 +365,10 @@ Error generating stack: `+o.message+`
 
     @media(max-width: 450px) {
         width: 100vw;
-        height: 95vh;
-        gap: 0;
-        justify-content: space-around;
-        // padding: 2rem 0;
-        // border: solid 5px #f1f2aa;
+        height: 88vh;
+        justify-content: start;
+        padding: 2rem 0;
+        // border: solid 1px #f1f2aa;
     }
 `,gx=G.div`
     width: 30%;
@@ -443,9 +442,9 @@ Error generating stack: `+o.message+`
         width: 100%;
         height: 70%;
         padding: 0 1rem;
-        justify-content: center;
+        justify-content: start;
         align-items: center;
-        gap: 0;
+        gap: .5rem;
 
         h2 {
             letter-spacing: 4px;
@@ -489,8 +488,8 @@ Error generating stack: `+o.message+`
     }
 
     @media(max-width: 450px) {
-        width: 170px;
-        height: 170px;
+        width: 150px;
+        height: 150px;
         margin-bottom: 15%;
 
         a {
@@ -520,7 +519,7 @@ Error generating stack: `+o.message+`
         line-height: 37px;
         letter-spacing: 3px;
     }
-`,Cp=()=>(b.exports.useEffect(()=>{const t=yi.timeline();t.fromTo("#bg",{width:"0%",opacity:0},{opacity:1,width:"100%"},">=2"),t.fromTo("#subtitle",{x:1500,opacity:0},{x:0,opacity:1},3),t.fromTo("#title",{x:-1500,opacity:0},{x:0,opacity:1},3.2),t.fromTo("#text",{x:1500,opacity:0},{x:0,opacity:1},3.4),t.fromTo("#btn",{opacity:0},{opacity:1,ease:"strong.inOut"},3.6)},[]),J(vi,{children:[E(hx,{id:"bg"}),J(mx,{children:[J(gx,{children:[E("h2",{id:"subtitle",children:"so, you want to travel to"}),E("h1",{id:"title",children:"space"}),E("p",{id:"text",children:"Let\u2019s face it; if you want to go to space, you might as well genuinely go to outer space and not hover kind of on the edge of it. Well sit back, and relax because we\u2019ll give you a truly out of this world experience!"})]}),E(vx,{id:"btn",children:E(Mi,{to:"/destination",children:"explore"})})]})]}));/*!
+`,Cp=()=>(b.exports.useEffect(()=>{yi.timeline()},[]),J(vi,{children:[E(hx,{id:"bg"}),J(mx,{children:[J(gx,{children:[E("h2",{id:"subtitle",children:"so, you want to travel to"}),E("h1",{id:"title",children:"space"}),E("p",{id:"text",children:"Let\u2019s face it; if you want to go to space, you might as well genuinely go to outer space and not hover kind of on the edge of it. Well sit back, and relax because we\u2019ll give you a truly out of this world experience!"})]}),E(vx,{id:"btn",children:E(Mi,{to:"/destination",children:"explore"})})]})]}));/*!
  * Glide.js v3.6.0
  * (c) 2013-2022 Jędrzej Chałubek (https://github.com/jedrzejchalubek/)
  * Released under the MIT License.

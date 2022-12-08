@@ -364,10 +364,11 @@ Error generating stack: `+o.message+`
 
     @media(max-width: 450px) {
         width: 100vw;
-        height: 95vh;
+        height: 100vh;
         gap: 0;
-        justify-content: center ;
-        border: solid 3px #f1f2aa;
+        justify-content: center;
+        // padding: 2rem 0;
+        // border: solid 3px #f1f2aa;
     }
 `,gx=G.div`
     width: 30%;
@@ -488,7 +489,7 @@ Error generating stack: `+o.message+`
     @media(max-width: 450px) {
         width: 45vw;
         height: 45vw;
-        margin-bottom: 1rem;
+        margin-bottom: 3rem;
     }
 
     &:hover {

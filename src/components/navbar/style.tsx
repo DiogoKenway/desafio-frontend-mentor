@@ -18,7 +18,7 @@ const WrapperHeader = styled.header`
 `
 
 const Logo = styled.div`
-    width: 50%;
+    width: 40%;
     position: relative;
 
     img {
@@ -26,7 +26,7 @@ const Logo = styled.div`
     }
 
     hr {
-        width: 90%;
+        width: 80%;
         position: absolute;
         top: 60%;
         right: -4%;
@@ -82,10 +82,11 @@ const NavigationBar = styled.ul`
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 70%;
+    width: 65%;
     background-color: #806d6d33;
     backdrop-filter: blur(15px);
     position: relative;
+    line-height: 32px;
     gap: 1rem;
     // border: solid 1px #aaff;
 
@@ -99,7 +100,9 @@ const NavigationBar = styled.ul`
 
         strong {
             color: white;
-            margin-right: .5rem;
+            margin-right: .4rem;
+            font-weight: 400;
+            line-height: 32px;
         }
 
         &:hover {
@@ -145,17 +148,16 @@ const NavigationBar = styled.ul`
             width: 100%;
 
             a {
-                display: inline-block;
+                display: inline-block;s
                 width: 90%;
-                font-size: 4vw;
+                font-size: 5vw;
                 padding: 1rem;
                 border-bottom: none !important;
                 // border-right: 2px solid #FFF;
 
                 strong {
                     display: inline-block;
-                    padding-right: .5rem;
-
+                    padding-right: .3rem;
                 }
 
                 &:hover {

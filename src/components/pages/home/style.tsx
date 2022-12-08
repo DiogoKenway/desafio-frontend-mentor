@@ -27,12 +27,12 @@ const BgContent = styled.div`
 `
 
 const WrapperHome = styled.section`
-    width: 80vw;
+    width: 100vw;
     height: 75vh;
-    margin: 0 auto;
+    gap: 4rem;
     display: flex;
     align-items: flex-end;
-    justify-content: space-between;
+    justify-content: space-around;
     // border: solid 3px #f1f2;
     padding-bottom: 3rem;
 
@@ -45,10 +45,11 @@ const WrapperHome = styled.section`
     }
 
     @media(max-width: 450px) {
-        width: 100%;
-        height: 90vh;
-        justify-content: space-around;
-        // padding: 2rem 1rem;
+        width: 100vw;
+        height: 100vh;
+        gap: 0;
+        justify-content: center;
+        // padding: 2rem 0;
         // border: solid 3px #f1f2aa;
     }
 `
@@ -154,11 +155,10 @@ const InfoHome = styled.div`
 
 
 const BtnExplore = styled.div`
-    width: 16vw;
-    height: 16vw;
+    width: 17vw;
+    height: 17vw;
     border-radius: 100%;
     background-color: #FFF;
-    margin-right: 5%;
     cursor: pointer;
     display: flex;
     align-items: center;
@@ -176,7 +176,7 @@ const BtnExplore = styled.div`
     @media(max-width: 450px) {
         width: 45vw;
         height: 45vw;
-        margin-bottom: 1rem;
+        margin-bottom: 3rem;
     }
 
     &:hover {

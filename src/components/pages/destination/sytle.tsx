@@ -226,7 +226,8 @@ const SliderTitle = styled.div`
 
     h1 {
         font-family: Bellefair;
-        font-size: 100px;
+        font-size: clamp(6vw, 7rem, 5rem);
+        margin: 2rem 0;
         font-weight: 400;
         line-height: 115px;
         letter-spacing: 0px;

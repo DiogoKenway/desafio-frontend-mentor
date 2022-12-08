@@ -46,8 +46,8 @@ const WrapperHome = styled.section`
 
     @media(max-width: 450px) {
         width: 100%;
-        height: 95vh;
-        justify-content: space-around;
+        height: 90vh;
+        justify-content: center;
         padding: 3rem 1rem;
         // border: solid 3px #f1f2aa;
     }
@@ -58,7 +58,7 @@ const InfoHome = styled.div`
     height: 100%;
     display: flex;
     flex-direction: column;
-    padding: 0 3rem;
+    cc
     gap: 3rem;
     justify-content: end;
     align-items: center;
@@ -124,9 +124,14 @@ const InfoHome = styled.div`
 
     @media(max-width: 450px) {
         width: 100%;
-        height: 50%;
+        height: 70%;
+        padding: 0 1rem;
+        justify-content: center;
+        align-items: center;
+        gap: 0;
 
         h2 {
+            letter-spacing: 4px;
             font-size: 1.5rem;
         }
 
@@ -161,14 +166,18 @@ const BtnExplore = styled.div`
     align-items: center;
     justify-content: center;
 
+    a {
+        padding: 55px 35px;
+    }
+
     @media(max-width: 768px) {
         width: 33vw;
         height: 33vw;
     }
 
     @media(max-width: 450px) {
-        width: 40vw;
-        height: 40vw;
+        width: 45vw;
+        height: 45vw;
     }
 
     &:hover {

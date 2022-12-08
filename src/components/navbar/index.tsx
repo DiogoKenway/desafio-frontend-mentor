@@ -15,12 +15,7 @@ import {
 }
     from './style';
 
-
-type Routes = {
-    currentRoute: string;
-}
-
-const Navbar = ({ currentRoute }: Routes) => {
+const Navbar = ({ currentRoute }: { currentRoute: string }) => {
     
     const [showMenu, setShowMenu] = useState(true);
 
@@ -34,9 +29,9 @@ const Navbar = ({ currentRoute }: Routes) => {
         useEffect(() => {
             const tl = gsap.timeline();
             
-            tl.fromTo("#logo", {y: 1500, opacity: 0}, {y: 0, opacity: 1}, 3)
-            tl.fromTo("#line", {x: 1500, opacity: 0}, {x: 0, opacity: 1}, 3.1)
-            tl.fromTo("#navbar", {y: -1500, opacity: 0}, {y: 0, opacity: 1}, 3.5)
+            // tl.fromTo("#logo", {y: 1500, opacity: 0}, {y: 0, opacity: 1}, 3);
+            // tl.fromTo("#line", {x: 1500, opacity: 0}, {x: 0, opacity: 1}, 3.1);
+            // tl.fromTo("#navbar", {y: -1500, opacity: 0}, {y: 0, opacity: 1}, 3.5);
        
             let timeoutId: any;
 
@@ -80,32 +75,32 @@ const Navbar = ({ currentRoute }: Routes) => {
                         onClick={() => setShowMenu(!showMenu)} />
                 </CloseIcon>
                 <li>
-                    <Link to=""
-                        style={ currentRoute === ""
+                    <Link to="/home"
+                        style={ currentRoute === "home"
                          ? { borderBottom: "solid 2px #FFF"}
                          : { borderBottom: "solid 2px transparent" } }
-                        ><strong>0 0</strong>&nbsp; H O M E</Link>
+                        ><strong>00</strong>home</Link>
                 </li>
                 <li>
                     <Link to="/destination"
                         style={currentRoute === "destination"
                             ? { borderBottom: "solid 2px white" }
                             : { borderBottom: "solid 2px transparent" }
-                        }><strong>0 1</strong>&nbsp; D E S T I N A T I O N</Link>
+                        }><strong>01</strong>destination</Link>
                 </li>
                 <li>
                     <Link to="/crew"
                         style={currentRoute === "crew"
                             ? { borderBottom: "solid 2px white" }
                             : { borderBottom: "solid 2px transparent" }
-                        }><strong>0 2</strong>&nbsp; C R E W</Link>
+                        }><strong>02</strong>crew</Link>
                 </li>
                 <li>
                     <Link to="/technology"
                         style={currentRoute === "technology"
                             ? { borderBottom: "solid 2px white" }
                             : { borderBottom: "solid 2px transparent" }
-                        }><strong>0 3</strong>&nbsp; T E C H N O L O G Y</Link>
+                        }><strong>03</strong>technology</Link>
                 </li>
             </NavigationBar>
         </WrapperHeader>

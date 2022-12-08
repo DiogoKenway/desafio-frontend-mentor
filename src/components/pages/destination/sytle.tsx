@@ -70,32 +70,30 @@ const Container = styled.div`
 
 const HeaderPage = styled.div`
     display:  flex;
-    flex-direction:  column;
-    // gap: 1rem;
+    flex-direction: column;
     align-items: center;
-    // border: solid 1px #aaff; 
+    // border: solid 1px #aaff;
     width: 100%;
-    // height: 100%;
     text-align: center;
    
 
     @media(max-width: 768px) {
         justify-content: center;
         align-items: center;
-        width: 70%;
-        gap: 2rem;
+        width: 100%;
         padding: 0;
     }
 
     @media(max-width: 450px) {
-        justify-content: space-between;
         align-items: center;
-        width: 70%;
-        gap: 1.5rem;
+        justify-content: flex-start;
+        width: 100%;
         padding: 0;
     }
 `
 const PageTitle = styled.div`
+    margin-bottom: 3rem;
+
     h2 {
         text-transform: uppercase;
         color: #D0D6F9;
@@ -110,11 +108,14 @@ const PageTitle = styled.div`
 
     @media(max-width: 768px) {
         text-align: center;
+        margin-bottom: 2rem;
     }
 
     @media(max-width: 450px) {
+        margin-bottom: 1.2rem;
         
         h2 {
+            letter-spacing: 4px;
             font-size: 1.5rem;
         }
     }
@@ -126,10 +127,8 @@ const ContainerImg = styled.div`
     align-items: center;
     justify-content: center;
     width: 100%;
-    // padding: 1rem;
     // border: solid 1px #af22ff;
     z-index: -1;
-    margin-top: 3rem;
 
     img {
         width: 55%;
@@ -138,21 +137,20 @@ const ContainerImg = styled.div`
     }
 
     @media(max-width: 768px) {
-        width: 100%;
-        height: 100%;
+        width: 30%;
         justify-content: center;
         margin-bottom: 2rem;
-        align-items: flex-end;
+        align-items: start;
         padding: 0;
 
         img {
-            width: 60%;
+            width: 100%;
         }
     }
 
     @media(max-width: 450px) {
-        width: 80%;
-        height: 5%;
+        width: 50%;
+        
         img {
             width: 100%;
         }
@@ -215,7 +213,7 @@ const ContentSlider = styled.div`
 
     @media(max-width: 768px) {
         align-items: center;
-        gap: 0rem;
+        gap: 0;
         height: 30%;
     }
 

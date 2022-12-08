@@ -128,9 +128,10 @@ const PageTitle = styled.div`
 
     @media(max-width: 450px) {
         position: absolute;
-        top: -8%;
+        top: -10%;
 
         h2 {
+            letter-spacing: 4px;
             font-size: 1.5rem;
         }
     }
@@ -286,10 +287,10 @@ const SectionPhoto = styled.section`
         order: -1;
         transform: translate(0, 40px);
         border-bottom: solid 1px #383B4B;
-        width: 90%;
+        width: 100%;
 
         img {
-            width: 55%;
+            width: 45%;
         }
     }
 `

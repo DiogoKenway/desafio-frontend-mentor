@@ -81,6 +81,7 @@ const PageTitle = styled.div`
         
 
         h2 {
+            letter-spacing: 4px;
             font-size: 1.5rem;  
         }
     }
@@ -217,11 +218,15 @@ const ContainerImage = styled.section`
     // border: solid 1px #551121;
 
     img {
-        width: 101%;
+        width: 90%;
     }
 
     @media(max-width: 768px) {
         order: -1;
+
+        img {
+            width: 100%;
+        }
     }
 
 `

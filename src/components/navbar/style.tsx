@@ -22,11 +22,11 @@ const Logo = styled.div`
     position: relative;
 
     img {
-        width: 8%;
+        width: 90px;
     }
 
     hr {
-        width: 89%;
+        width: 90%;
         position: absolute;
         top: 60%;
         right: -4%;
@@ -76,24 +76,29 @@ const MenuMobile = styled.div`
 
 
 const NavigationBar = styled.ul`
+    padding: 1rem 2rem;
+    letter-spacing: 5px;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 65%;
+    width: 70%;
     background-color: #806d6d33;
     backdrop-filter: blur(15px);
-    
     position: relative;
+    gap: 1rem;
+    // border: solid 1px #aaff;
 
     li a {
+        text-transform: uppercase;
+        text-spacing: 3px;
         display: block;
-        margin: 0 1rem;
         padding: 2rem 0;
         border-bottom: solid 2px transparent;
-        font-size: clamp(1.1vw, 2rem, .75rem);
+        font-size: clamp(1.3vw, 1.3rem, .7rem);
 
         strong {
             color: white;
+            margin-right: .5rem;
         }
 
         &:hover {
@@ -102,10 +107,15 @@ const NavigationBar = styled.ul`
     }
 
     @media(max-width: 768px) {
-        width: 60%;
-        padding: .5rem;
+        width: 65%;
+        padding: .5rem 1rem;
+        justify-content: space-around;
+        // border: solid 1px #aaff;
+        gap: .7rem;
+        letter-spacing: 2px;
+
         li a {
-            font-size: 2.2vw;
+            font-size: 1.1rem;
             margin: 0;
 
             strong {

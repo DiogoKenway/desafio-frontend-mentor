@@ -29,9 +29,9 @@ const Navbar = ({ currentRoute }: { currentRoute: string }) => {
         useEffect(() => {
             const tl = gsap.timeline();
             
-            // tl.fromTo("#logo", {y: 1500, opacity: 0}, {y: 0, opacity: 1}, 3);
-            // tl.fromTo("#line", {x: 1500, opacity: 0}, {x: 0, opacity: 1}, 3.1);
-            // tl.fromTo("#navbar", {y: -1500, opacity: 0}, {y: 0, opacity: 1}, 3.5);
+            tl.fromTo("#logo", {y: 1500, opacity: 0}, {y: 0, opacity: 1}, 2);
+            tl.fromTo("#line", {x: 1500, opacity: 0}, {x: 0, opacity: 1}, 2.1);
+            tl.fromTo("#navbar", {y: -1500, opacity: 0}, {y: 0, opacity: 1}, 2.5);
        
             let timeoutId: any;
 

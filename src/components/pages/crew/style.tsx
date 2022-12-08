@@ -118,7 +118,7 @@ const PageTitle = styled.div`
         letter-spacing: 8px;
         text-align: start;
         font-weight: 200;
-        margin-bottom: 2rem; 
+        margin-top: 1rem; 
 
         strong {
             margin-right: 1rem;
@@ -133,6 +133,7 @@ const PageTitle = styled.div`
         h2 {
             letter-spacing: 4px;
             font-size: 1.5rem;
+            margin-bottom: 1rem;
         }
     }
 
@@ -279,7 +280,7 @@ const SectionPhoto = styled.section`
         transform: translate(0px, -100px);
 
         img {
-            width: 70%;
+            width: 80%;
         }
     }
 
@@ -287,7 +288,7 @@ const SectionPhoto = styled.section`
         order: -1;
         transform: translate(0, 40px);
         border-bottom: solid 1px #383B4B;
-        width: 100%;
+        width: 95%;
 
         img {
             width: 45%;

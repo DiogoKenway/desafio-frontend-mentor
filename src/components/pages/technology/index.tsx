@@ -28,7 +28,8 @@ const Technology = (props: any) => {
     useEffect(() => {
         const glide = new Glide("#glide", {
             type: 'slider',
-            perView: 1
+            perView: 1,
+            gap: 1500
         })
 
         glide.mount();
@@ -38,7 +39,12 @@ const Technology = (props: any) => {
     useEffect(() => {
         const tl = gsap.timeline();
 
-        tl.fromTo("#bg", { opacity: 0 }, { opacity: 1, duration: 3 }, 1);
+        tl.fromTo("#bg", { opacity: 0 }, { opacity: 1 , duration: 3 }, 1);
+        tl.fromTo("#title-tech", { opacity: 0, x: "-1200px" }, { opacity: 1, x: "0px"}, 1);
+        tl.fromTo("#dots-tech", { opacity: 0, y: "1500px" }, { opacity: 1, y: "0px" }, 1.1);
+        tl.fromTo("#name-tech", { y: "-1000px" }, { y: "0px"}, 1.2);
+        tl.fromTo("#info-tech", { y: "1000px" }, { y: "0px"}, 1.2);
+        tl.fromTo("#img-tech", { opacity: 0 }, { opacity: 1, delay: .2 }, 1.3);
 
     }, []);
 
@@ -85,19 +91,19 @@ const Technology = (props: any) => {
                                     <li key={index}>
                                         <WrapperTecnology>
                                             <Container>
-                                                <PageTitle>
+                                                <PageTitle id="title-tech">
                                                     <h2><strong>03</strong> Space launch 101</h2>
                                                 </PageTitle>
-                                                <NavigationPoints data-glide-el="controls[nav]">
+                                                <NavigationPoints id="dots-tech" data-glide-el="controls[nav]">
                                                     <span data-glide-dir="=0">1</span>
                                                     <span data-glide-dir="=1">2</span>
                                                     <span data-glide-dir="=2">3</span>
                                                 </NavigationPoints>
                                                 <Informations>
-                                                    <h1>{item.name}</h1>
-                                                    <p>{item.description}</p>
+                                                    <h1 id="name-tech">{item.name}</h1>
+                                                    <p id="info-tech">{item.description}</p>
                                                 </Informations>
-                                                <ContainerImage>
+                                                <ContainerImage id="img-tech">
                                                     <img src={ width <= 768
                                                         ? getImageByIndex<string>(index, RocketsSmallerDevices)
                                                         : getImageByIndex<string>(index, imagesRocketsDesktop)} alt={item.name} />

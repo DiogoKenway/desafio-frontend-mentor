@@ -48,9 +48,9 @@ const WrapperHome = styled.section`
         width: 100vw;
         height: 100vh;
         gap: 0;
-        justify-content: center;
+        justify-content: space-around;
         // padding: 2rem 0;
-        // border: solid 3px #f1f2aa;
+        // border: solid 5px #f1f2aa;
     }
 `
 
@@ -171,12 +171,13 @@ const BtnExplore = styled.div`
     @media(max-width: 768px) {
         width: 33vw;
         height: 33vw;
+        margin-bottom: 10%;
     }
 
     @media(max-width: 450px) {
         width: 170px;
         height: 170px;
-        margin-bottom: 3rem;
+        margin-bottom: 17%;
 
         a {
             font-family: Bellefair;

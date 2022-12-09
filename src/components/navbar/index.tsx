@@ -68,7 +68,7 @@ const Navbar = ({ currentRoute }: { currentRoute: string }) => {
                     
                     alt="icone para abrir menu" />
             </MenuMobile>
-            <NavigationBar id="navbar" style={showMenu || width > 450 ? { right: "0" } : { right: "-100vw" }}>
+            <NavigationBar onClick={() => setShowMenu(!showMenu)} id="navbar" style={showMenu || width > 450 ? { right: "0" } : { right: "-100vw" }}>
                 <CloseIcon onClick={() => setShowMenu(!showMenu)}>
                     <img src={closeIcon}
                         alt="icone de fechar menu"

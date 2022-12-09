@@ -104,8 +104,8 @@ const SectionInfo = styled.section`
         align-items: center;
         justify-content: start;
         width: 100%;
-        height: 40%;
-        // gap: 1rem;
+        height: 50%;
+        gap: 1rem;
         // border: solid 1px red;
         padding:  0;
     }

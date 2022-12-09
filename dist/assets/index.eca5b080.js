@@ -922,8 +922,8 @@ Error generating stack: `+o.message+`
         align-items: center;
         justify-content: start;
         width: 100%;
-        height: 40%;
-        // gap: 1rem;
+        height: 50%;
+        gap: 1rem;
         // border: solid 1px red;
         padding:  0;
     }
@@ -1108,7 +1108,7 @@ Error generating stack: `+o.message+`
             width: 45%;
         }
     }
-`,KS=()=>(b.exports.useEffect(()=>{const t=yi.timeline();t.fromTo("#bg-crew",{height:"0%"},{height:"100%",delay:.6},1.3),t.fromTo("#img-crew",{y:"1000px"},{y:"0px",delay:.2},2),t.fromTo("#title-crew",{opacity:0,y:"-1500px"},{opacity:1,y:"0px"},1.9),t.fromTo("#role",{x:"-1500px",opacity:0},{x:"0px",opacity:1},2.2),t.fromTo("#name-crew",{x:1500,opacity:0},{x:0,opacity:1},2.3),t.fromTo("#bio",{x:-1500,opacity:0},{x:0,opacity:1},2.3),t.fromTo("#dots",{x:-1500,opacity:0},{x:0,opacity:1},2.3)},[]),b.exports.useEffect(()=>{new zf("#glide",{type:"slider",perView:1,gap:1e3}).mount()},[]),J(vi,{children:[E(BS,{id:"bg-crew"})," ",Lp?E("div",{id:"glide",children:E("div",{className:"glide__track","data-glide-el":"track",children:E("ul",{className:"glide__slides",children:Lp.map((t,e)=>E("li",{children:E(US,{children:J(VS,{children:[J(HS,{children:[E(WS,{id:"title-crew",children:J("h2",{children:[E("strong",{children:"02"}),"meet your crew"]})}),J(YS,{children:[E("h3",{id:"role",children:t.role}),E("h1",{id:"name-crew",children:t.name}),E("p",{id:"bio",children:t.bio})]}),J(QS,{id:"dots","data-glide-el":"controls[nav]",children:[E(ts,{"data-glide-dir":"=0"}),E(ts,{"data-glide-dir":"=1"}),E(ts,{"data-glide-dir":"=2"}),E(ts,{"data-glide-dir":"=3"})]})]}),E(XS,{id:"img-crew",children:E("img",{src:rl(e,xS),alt:t.name})})]})})},e))})})}):E("h1",{children:"CARREGANDO...."})]})),GS=""+new URL("background-technology-desktop.457659c3.jpg",import.meta.url).href,ZS=""+new URL("background-technology-tablet.cbc2b315.jpg",import.meta.url).href,qS=""+new URL("background-technology-mobile.b1fdb61f.jpg",import.meta.url).href,JS=G.div`
+`,KS=()=>(b.exports.useEffect(()=>{yi.timeline()},[]),b.exports.useEffect(()=>{new zf("#glide",{type:"slider",perView:1,gap:1e3}).mount()},[]),J(vi,{children:[E(BS,{id:"bg-crew"})," ",Lp?E("div",{id:"glide",children:E("div",{className:"glide__track","data-glide-el":"track",children:E("ul",{className:"glide__slides",children:Lp.map((t,e)=>E("li",{children:E(US,{children:J(VS,{children:[J(HS,{children:[E(WS,{id:"title-crew",children:J("h2",{children:[E("strong",{children:"02"}),"meet your crew"]})}),J(YS,{children:[E("h3",{id:"role",children:t.role}),E("h1",{id:"name-crew",children:t.name}),E("p",{id:"bio",children:t.bio})]}),J(QS,{id:"dots","data-glide-el":"controls[nav]",children:[E(ts,{"data-glide-dir":"=0"}),E(ts,{"data-glide-dir":"=1"}),E(ts,{"data-glide-dir":"=2"}),E(ts,{"data-glide-dir":"=3"})]})]}),E(XS,{id:"img-crew",children:E("img",{src:rl(e,xS),alt:t.name})})]})})},e))})})}):E("h1",{children:"CARREGANDO...."})]})),GS=""+new URL("background-technology-desktop.457659c3.jpg",import.meta.url).href,ZS=""+new URL("background-technology-tablet.cbc2b315.jpg",import.meta.url).href,qS=""+new URL("background-technology-mobile.b1fdb61f.jpg",import.meta.url).href,JS=G.div`
     background: url(${GS}) center no-repeat;
     background-size: cover;
     background-attachment: fixed;

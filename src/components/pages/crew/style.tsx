@@ -254,7 +254,7 @@ const NavigationPoints = styled.div`
         width: 100%;
         height: 100%;
         order: -1;
-        // margin: 2rem 0;
+        margin: 1rem 0;
     }
 `
 

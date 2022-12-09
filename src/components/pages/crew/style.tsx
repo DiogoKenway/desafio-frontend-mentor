@@ -212,8 +212,8 @@ const RoleInformation = styled.div`
 
     @media(max-width: 450px) {
         // border: solid 1px #99bb20;
-        height: 60%;
-        width: 90%;
+        height: 80%;
+        width: 80%;
         gap: 0;
         padding: 3rem 1rem;
         justify-content: center;
@@ -221,7 +221,7 @@ const RoleInformation = styled.div`
         p {
             font-size: 15px;
             line-height: 25px;
-            // padding-bottom: 1rem;
+            padding-bottom: 2rem;
         }
 
         h3 {

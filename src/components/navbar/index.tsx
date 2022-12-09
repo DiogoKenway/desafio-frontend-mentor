@@ -16,32 +16,38 @@ import {
     from './style';
 
 const Navbar = ({ currentRoute }: { currentRoute: string }) => {
-    
+
     const [showMenu, setShowMenu] = useState(true);
 
-    const getWidth = () :number => window.innerWidth
+
+    useEffect(() => {
+        const tl = gsap.timeline();
+
+        tl.fromTo("#logo", { y: 1500, opacity: 0 }, { y: 0, opacity: 1 }, 2);
+        tl.fromTo("#line", { x: 1500, opacity: 0 }, { x: 0, opacity: 1 }, 2.1);
+        tl.fromTo("#navbar", { y: -1500, opacity: 0 }, { y: 0, opacity: 1 }, 2.5);
+    }, [])
+
+
+    const getWidth = (): number => window.innerWidth
         || document.documentElement.clientWidth
         || document.body.clientWidth;
 
-    function useCurrentWidth() :number {
+    function useCurrentWidth(): number {
         const [width, setWidth] = useState(getWidth());
 
         useEffect(() => {
-            const tl = gsap.timeline();
-            
-            tl.fromTo("#logo", {y: 1500, opacity: 0}, {y: 0, opacity: 1}, 2);
-            tl.fromTo("#line", {x: 1500, opacity: 0}, {x: 0, opacity: 1}, 2.1);
-            tl.fromTo("#navbar", {y: -1500, opacity: 0}, {y: 0, opacity: 1}, 2.5);
-       
+
+
             let timeoutId: any;
 
             const resizeListener = (): void => {
-                
+
                 clearTimeout(timeoutId);
-                
+
                 timeoutId = setTimeout(() => setWidth(getWidth()), 150);
             };
-           
+
             window.addEventListener('resize', resizeListener);
 
             return () => {
@@ -49,37 +55,38 @@ const Navbar = ({ currentRoute }: { currentRoute: string }) => {
             }
 
         }, [])
-        
+
         return width;
     }
 
     const width: number = useCurrentWidth();
 
+
     return (
         <WrapperHeader>
             <Logo>
                 <img id="logo" src={logo} alt="logo do site" />
-                <hr id="line"/>
+                <hr id="line" />
             </Logo>
-            <MenuMobile onClick={() => setShowMenu(!showMenu)} 
+            <MenuMobile onClick={() => setShowMenu(!showMenu)}
                 style={showMenu || width > 450 ? { display: "none" } : { display: "initial" }}
-               >
+            >
                 <img src={openIcon}
-                    
+
                     alt="icone para abrir menu" />
             </MenuMobile>
             <NavigationBar onClick={() => setShowMenu(!showMenu)} id="navbar" style={showMenu || width > 450 ? { right: "0" } : { right: "-100vw" }}>
                 <CloseIcon onClick={() => setShowMenu(!showMenu)}>
                     <img src={closeIcon}
                         alt="icone de fechar menu"
-                         />
+                    />
                 </CloseIcon>
                 <li>
                     <Link to="/home"
-                        style={ currentRoute === "home"
-                         ? { borderBottom: "solid 2px #FFF"}
-                         : { borderBottom: "solid 2px transparent" } }
-                        ><strong>00</strong>home</Link>
+                        style={currentRoute === "home"
+                            ? { borderBottom: "solid 2px #FFF" }
+                            : { borderBottom: "solid 2px transparent" }}
+                    ><strong>00</strong>home</Link>
                 </li>
                 <li>
                     <Link to="/destination"

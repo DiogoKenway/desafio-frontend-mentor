@@ -27,13 +27,13 @@ const Crew = () => {
 
         const tl = gsap.timeline();
 
-        // tl.fromTo("#bg-crew", {height: "0%"}, {height: "100%", delay: .6 }, 1.3);
-        // tl.fromTo("#img-crew", {y: "1000px"}, {y: "0px", delay: .2 }, 2);
-        // tl.fromTo("#title-crew", {opacity: 0, y: "-1500px"}, { opacity: 1, y: "0px"} , 1.9);
-        // tl.fromTo("#role", {x: "-1500px", opacity: 0}, {x: "0px", opacity: 1}, 2.2);
-        // tl.fromTo("#name-crew", {x: 1500, opacity: 0}, {x: 0, opacity: 1}, 2.3);
-        // tl.fromTo("#bio", {x: -1500, opacity: 0}, {x: 0, opacity: 1}, 2.3);
-        // tl.fromTo("#dots", { x: -1500, opacity: 0}, {x: 0, opacity: 1}, 2.3);
+        tl.fromTo("#bg-crew", {height: "0%"}, {height: "100%", delay: .6 }, 1.3);
+        tl.fromTo("#img-crew", {y: "1000px"}, {y: "0px", delay: .2 }, 2);
+        tl.fromTo("#title-crew", {opacity: 0, y: "-1500px"}, { opacity: 1, y: "0px"} , 1.9);
+        tl.fromTo("#role", {x: "-1500px", opacity: 0}, {x: "0px", opacity: 1}, 2.2);
+        tl.fromTo("#name-crew", {x: 1500, opacity: 0}, {x: 0, opacity: 1}, 2.3);
+        tl.fromTo("#bio", {x: -1500, opacity: 0}, {x: 0, opacity: 1}, 2.3);
+        tl.fromTo("#dots", { x: -1500, opacity: 0}, {x: 0, opacity: 1}, 2.3);
 
     }, [])
 

@@ -476,8 +476,30 @@ Error generating stack: `+o.message+`
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size: clamp(2vw, 1.6rem, 2.8rem);
+    animation: pulse 1.5s infinite alternate;
+
+    @keyframes pulse {
+        from {
+            transform: scale(1);
+            box-shadow: 0px 0px 0px #FFF;
+        }
+
+        to {
+            transform: scale(1.20);
+            box-shadow: 15px 15px 120px #FFF;
+        }
+    }
 
     a {
+        display: block;
+        color: #000;
+        text-transform: uppercase;
+        font-family: 'Bellefair';
+        font-style: normal;
+        font-weight: 400;
+        line-height: 37px;
+        letter-spacing: 3px;
         padding: 55px 35px;
     }
 
@@ -501,23 +523,6 @@ Error generating stack: `+o.message+`
             text-align: center;
 
         }
-    }
-
-    &:hover {
-        transform: scale(1.15);
-        box-shadow: 5px 5px 120px #FFF;
-    }
-
-    a {
-        display: block;
-        color: #000;
-        text-transform: uppercase;
-        font-family: 'Bellefair';
-        font-style: normal;
-        font-weight: 400;
-        font-size: clamp(2vw, 1.6rem, 2.8rem);
-        line-height: 37px;
-        letter-spacing: 3px;
     }
 `,xp=()=>(b.exports.useEffect(()=>{const t=yi.timeline();t.fromTo("#bg",{width:"0%",opacity:0},{opacity:1,width:"100%"},">=2"),t.fromTo("#subtitle",{x:1500,opacity:0},{x:0,opacity:1},3),t.fromTo("#title",{x:-1500,opacity:0},{x:0,opacity:1},3.2),t.fromTo("#text",{x:1500,opacity:0},{x:0,opacity:1},3.4),t.fromTo("#btn",{opacity:0},{opacity:1,ease:"strong.inOut"},3.6)},[]),J(vi,{children:[E(px,{id:"bg"}),J(hx,{children:[J(mx,{children:[E("h2",{id:"subtitle",children:"so, you want to travel to"}),E("h1",{id:"title",children:"space"}),E("p",{id:"text",children:"Let\u2019s face it; if you want to go to space, you might as well genuinely go to outer space and not hover kind of on the edge of it. Well sit back, and relax because we\u2019ll give you a truly out of this world experience!"})]}),E(gx,{id:"btn",children:E(Mi,{to:"/destination",children:"explore"})})]})]}));/*!
  * Glide.js v3.6.0
@@ -1322,4 +1327,4 @@ Error generating stack: `+o.message+`
         }
     }
 
-`,sk=()=>{b.exports.useState(!0),b.exports.useEffect(()=>{new zf("#glide",{type:"slider",perView:1,gap:1500}).mount()},[]),b.exports.useEffect(()=>{const r=yi.timeline();r.fromTo("#bg",{opacity:0},{opacity:1,duration:3},1),r.fromTo("#title-tech",{opacity:0,x:"-1200px"},{opacity:1,x:"0px"},1.2),r.fromTo("#dots-tech",{opacity:0,y:"1500px"},{opacity:1,y:"0px"},1.4),r.fromTo("#name-tech",{y:"-1000px"},{y:"0px"},1.5),r.fromTo("#info-tech",{y:"1000px"},{y:"0px"},1.7),r.fromTo("#img-tech",{opacity:0},{opacity:1,delay:.2},2)},[]);const t=()=>window.innerWidth||document.documentElement.clientWidth||document.body.clientWidth;function e(){const[r,i]=b.exports.useState(t());return b.exports.useEffect(()=>{let o;const s=()=>{clearTimeout(o),o=setTimeout(()=>i(t()),150)};return window.addEventListener("resize",s),()=>{window.removeEventListener("resize",s)}},[]),r}const n=e();return J(vi,{children:[E(JS,{id:"bg"}),Dp?E("div",{id:"glide",children:E("div",{className:"glide__track","data-glide-el":"track",children:E("ul",{className:"glide__slides",children:Dp.map((r,i)=>E("li",{children:E(ek,{children:J(tk,{children:[E(nk,{id:"title-tech",children:J("h2",{children:[E("strong",{children:"03"})," Space launch 101"]})}),J(rk,{id:"dots-tech","data-glide-el":"controls[nav]",children:[E("span",{"data-glide-dir":"=0",children:"1"}),E("span",{"data-glide-dir":"=1",children:"2"}),E("span",{"data-glide-dir":"=2",children:"3"})]}),J(ik,{children:[E("h1",{id:"name-tech",children:r.name}),E("p",{id:"info-tech",children:r.description})]}),E(ok,{id:"img-tech",children:E("img",{src:n<=768?rl(i,kS):rl(i,SS),alt:r.name})})]})})},i))})})}):E("h1",{children:"CARREGANDO DADOS...."})]})};function lk(){const e=zo().pathname.split("/").join("");return J(vi,{children:[E(A1,{}),E(ux,{currentRoute:e}),J(M_,{children:[E(Tr,{path:"/home",element:E(xp,{})}),E(Tr,{path:"/destination",element:E(FS,{})}),E(Tr,{path:"/crew",element:E(KS,{})}),E(Tr,{path:"/technology",element:E(sk,{})}),E(Tr,{path:"*",element:E(xp,{})})]})]})}Fa.createRoot(document.getElementById("root")).render(E(_r.StrictMode,{children:E($_,{children:E(lk,{})})}));
+`,sk=()=>{b.exports.useEffect(()=>{new zf("#glide",{type:"slider",perView:1,gap:1500}).mount()},[]),b.exports.useEffect(()=>{const r=yi.timeline();r.fromTo("#bg",{opacity:0},{opacity:1,duration:3},1),r.fromTo("#title-tech",{opacity:0,x:"-1200px"},{opacity:1,x:"0px"},1.2),r.fromTo("#dots-tech",{opacity:0,y:"1500px"},{opacity:1,y:"0px"},1.4),r.fromTo("#name-tech",{y:"-1000px"},{y:"0px"},1.5),r.fromTo("#info-tech",{y:"1000px"},{y:"0px"},1.7),r.fromTo("#img-tech",{opacity:0},{opacity:1,delay:.2},2)},[]);const t=()=>window.innerWidth||document.documentElement.clientWidth||document.body.clientWidth;function e(){const[r,i]=b.exports.useState(t());return b.exports.useEffect(()=>{let o;const s=()=>{clearTimeout(o),o=setTimeout(()=>i(t()),150)};return window.addEventListener("resize",s),()=>{window.removeEventListener("resize",s)}},[]),r}const n=e();return J(vi,{children:[E(JS,{id:"bg"}),Dp?E("div",{id:"glide",children:E("div",{className:"glide__track","data-glide-el":"track",children:E("ul",{className:"glide__slides",children:Dp.map((r,i)=>E("li",{children:E(ek,{children:J(tk,{children:[E(nk,{id:"title-tech",children:J("h2",{children:[E("strong",{children:"03"})," Space launch 101"]})}),J(rk,{id:"dots-tech","data-glide-el":"controls[nav]",children:[E("span",{"data-glide-dir":"=0",children:"1"}),E("span",{"data-glide-dir":"=1",children:"2"}),E("span",{"data-glide-dir":"=2",children:"3"})]}),J(ik,{children:[E("h1",{id:"name-tech",children:r.name}),E("p",{id:"info-tech",children:r.description})]}),E(ok,{id:"img-tech",children:E("img",{src:n<=768?rl(i,kS):rl(i,SS),alt:r.name})})]})})},i))})})}):E("h1",{children:"CARREGANDO DADOS...."})]})};function lk(){const e=zo().pathname.split("/").join("");return J(vi,{children:[E(A1,{}),E(ux,{currentRoute:e}),J(M_,{children:[E(Tr,{path:"/home",element:E(xp,{})}),E(Tr,{path:"/destination",element:E(FS,{})}),E(Tr,{path:"/crew",element:E(KS,{})}),E(Tr,{path:"/technology",element:E(sk,{})}),E(Tr,{path:"*",element:E(xp,{})})]})]})}Fa.createRoot(document.getElementById("root")).render(E(_r.StrictMode,{children:E($_,{children:E(lk,{})})}));

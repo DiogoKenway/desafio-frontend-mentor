@@ -478,6 +478,7 @@ Error generating stack: `+o.message+`
     justify-content: center;
     font-size: clamp(2vw, 1.6rem, 2.8rem);
     animation: pulse 1.5s infinite alternate;
+    z-index: -1;
 
     @keyframes pulse {
         from {

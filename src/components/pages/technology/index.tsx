@@ -23,8 +23,6 @@ import {
 
 const Technology = () => {
 
-    const [showMenu, setShowMenu] = useState(true);
-
     useEffect(() => {
         const glide = new Glide("#glide", {
             type: 'slider',

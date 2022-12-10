@@ -162,8 +162,30 @@ const BtnExplore = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size: clamp(2vw, 1.6rem, 2.8rem);
+    animation: pulse 1.5s infinite alternate;
+
+    @keyframes pulse {
+        from {
+            transform: scale(1);
+            box-shadow: 0px 0px 0px #FFF;
+        }
+
+        to {
+            transform: scale(1.20);
+            box-shadow: 15px 15px 120px #FFF;
+        }
+    }
 
     a {
+        display: block;
+        color: #000;
+        text-transform: uppercase;
+        font-family: 'Bellefair';
+        font-style: normal;
+        font-weight: 400;
+        line-height: 37px;
+        letter-spacing: 3px;
         padding: 55px 35px;
     }
 
@@ -187,23 +209,6 @@ const BtnExplore = styled.div`
             text-align: center;
 
         }
-    }
-
-    &:hover {
-        transform: scale(1.15);
-        box-shadow: 5px 5px 120px #FFF;
-    }
-
-    a {
-        display: block;
-        color: #000;
-        text-transform: uppercase;
-        font-family: 'Bellefair';
-        font-style: normal;
-        font-weight: 400;
-        font-size: clamp(2vw, 1.6rem, 2.8rem);
-        line-height: 37px;
-        letter-spacing: 3px;
     }
 `
 export { BgContent, WrapperHome, InfoHome, BtnExplore }

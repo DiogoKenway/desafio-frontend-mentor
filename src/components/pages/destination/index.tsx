@@ -28,14 +28,14 @@ const Destination = () => {
     useEffect(() => {
         const tl = gsap.timeline();
             
-            tl.fromTo("#planet-img", {width: "1000%"}, {width: "100%", delay: .7 }, 1.2);
+            tl.fromTo("#planet-img", {width: "300%"}, {width: "100%", delay: .8 }, 1.3);
             tl.fromTo("#title", {y: "-1000px" }, { y: "0"} , 2.1);
-            tl.fromTo("#planet-list", {y: "-1500px", opacity: 0}, {y: "0px", opacity: 1}, 2.3);
-            tl.fromTo("#planet-name", {x: 1500, opacity: 0}, {x: 0, opacity: 1}, 2);
-            tl.fromTo("#description", {x: 1500, opacity: 0}, {x: 0, opacity: 1}, 2.1);
-            tl.fromTo("#line-info", {y: 1500, opacity: 0}, {y: 0, opacity: 1}, 2.2);
-            tl.fromTo("#distance", {y: 1500, opacity: 0}, {y: 0, opacity: 1}, 2.3);
-            tl.fromTo("#travel", {x: -1500, opacity: 0}, {x: 0, opacity: 1}, 2.3);
+            tl.fromTo("#planet-list", {y: "-1500px", opacity: 0}, {y: "0px", opacity: 1}, 2.4);
+            tl.fromTo("#planet-name", {x: 1500, opacity: 0}, {x: 0, opacity: 1}, 2.1);
+            tl.fromTo("#description", {x: 1500, opacity: 0}, {x: 0, opacity: 1}, 2.2);
+            tl.fromTo("#line-info", {y: 1500, opacity: 0}, {y: 0, opacity: 1}, 2.3);
+            tl.fromTo("#distance", {y: 1500, opacity: 0}, {y: 0, opacity: 1}, 2.4);
+            tl.fromTo("#travel", {x: -1500, opacity: 0}, {x: 0, opacity: 1}, 2.4);
     }, []);
 
     useEffect(() => {

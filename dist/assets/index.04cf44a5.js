@@ -324,7 +324,7 @@ Error generating stack: `+o.message+`
         top: 3%;
         right: 8%;
     }
-`,ux=({currentRoute:t})=>{const[e,n]=b.exports.useState(!0);b.exports.useEffect(()=>{const s=yi.timeline();s.fromTo("#logo",{y:1500,opacity:0},{y:0,opacity:1},2),s.fromTo("#line",{x:1500,opacity:0},{x:0,opacity:1},2.1),s.fromTo("#navbar",{y:-1500,opacity:0},{y:0,opacity:1},2.5)},[]);const r=()=>window.innerWidth||document.documentElement.clientWidth||document.body.clientWidth;function i(){const[s,l]=b.exports.useState(r());return b.exports.useEffect(()=>{let a;const u=()=>{clearTimeout(a),a=setTimeout(()=>l(r()),150)};return window.addEventListener("resize",u),()=>{window.removeEventListener("resize",u)}},[]),s}const o=i();return J(ix,{children:[J(ox,{children:[E("img",{id:"logo",src:tx,alt:"logo do site"}),E("hr",{id:"line"})]}),E(sx,{id:"menu-mobile",onClick:()=>n(!e),style:e||o>450?{display:"none"}:{display:"initial"},children:E("img",{src:rx,alt:"icone para abrir menu"})}),J(lx,{onClick:()=>n(!e),id:"navbar",style:e||o>450?{right:"0"}:{right:"-100vw"},children:[E(ax,{onClick:()=>n(!e),children:E("img",{src:nx,alt:"icone de fechar menu"})}),E("li",{children:J(Mi,{to:"/home",style:t==="home"?{borderBottom:"solid 2px #FFF"}:{borderBottom:"solid 2px transparent"},children:[E("strong",{children:"00"}),"home"]})}),E("li",{children:J(Mi,{to:"/destination",style:t==="destination"?{borderBottom:"solid 2px white"}:{borderBottom:"solid 2px transparent"},children:[E("strong",{children:"01"}),"destination"]})}),E("li",{children:J(Mi,{to:"/crew",style:t==="crew"?{borderBottom:"solid 2px white"}:{borderBottom:"solid 2px transparent"},children:[E("strong",{children:"02"}),"crew"]})}),E("li",{children:J(Mi,{to:"/technology",style:t==="technology"?{borderBottom:"solid 2px white"}:{borderBottom:"solid 2px transparent"},children:[E("strong",{children:"03"}),"technology"]})})]})]})},cx=""+new URL("background-home-desktop.c0071b13.jpg",import.meta.url).href,fx=""+new URL("background-home-tablet.5de14385.jpg",import.meta.url).href,dx=""+new URL("background-home-mobile.ffd09c17.jpg",import.meta.url).href,px=G.div`
+`,ux=({currentRoute:t})=>{const[e,n]=b.exports.useState(!0);b.exports.useEffect(()=>{yi.timeline()},[]);const r=()=>window.innerWidth||document.documentElement.clientWidth||document.body.clientWidth;function i(){const[s,l]=b.exports.useState(r());return b.exports.useEffect(()=>{let a;const u=()=>{clearTimeout(a),a=setTimeout(()=>l(r()),150)};return window.addEventListener("resize",u),()=>{window.removeEventListener("resize",u)}},[]),s}const o=i();return J(ix,{children:[J(ox,{children:[E("img",{id:"logo",src:tx,alt:"logo do site"}),E("hr",{id:"line"})]}),E(sx,{id:"menu-mobile",onClick:()=>n(!e),style:e||o>450?{display:"none"}:{display:"initial"},children:E("img",{src:rx,alt:"icone para abrir menu"})}),J(lx,{onClick:()=>n(!e),id:"navbar",style:e||o>450?{right:"0"}:{right:"-100vw"},children:[E(ax,{onClick:()=>n(!e),children:E("img",{src:nx,alt:"icone de fechar menu"})}),E("li",{children:J(Mi,{to:"/home",style:t==="home"?{borderBottom:"solid 2px #FFF"}:{borderBottom:"solid 2px transparent"},children:[E("strong",{children:"00"}),"home"]})}),E("li",{children:J(Mi,{to:"/destination",style:t==="destination"?{borderBottom:"solid 2px white"}:{borderBottom:"solid 2px transparent"},children:[E("strong",{children:"01"}),"destination"]})}),E("li",{children:J(Mi,{to:"/crew",style:t==="crew"?{borderBottom:"solid 2px white"}:{borderBottom:"solid 2px transparent"},children:[E("strong",{children:"02"}),"crew"]})}),E("li",{children:J(Mi,{to:"/technology",style:t==="technology"?{borderBottom:"solid 2px white"}:{borderBottom:"solid 2px transparent"},children:[E("strong",{children:"03"}),"technology"]})})]})]})},cx=""+new URL("background-home-desktop.c0071b13.jpg",import.meta.url).href,fx=""+new URL("background-home-tablet.5de14385.jpg",import.meta.url).href,dx=""+new URL("background-home-mobile.ffd09c17.jpg",import.meta.url).href,px=G.div`
     background: url(${cx}) center center no-repeat;
     background-size: cover;
     width: 100vw;
@@ -477,7 +477,7 @@ Error generating stack: `+o.message+`
     align-items: center;
     justify-content: center;
     font-size: clamp(2vw, 1.6rem, 2.8rem);
-    // animation: pulse 1.5s infinite alternate;
+    animation: pulse 1.5s infinite alternate;
     z-index: 3;
 
     @keyframes pulse {
@@ -488,7 +488,7 @@ Error generating stack: `+o.message+`
 
         to {
             transform: scale(1.1);
-            box-shadow: 15px 15px 100px #FFF;
+            box-shadow: 15px 15px 120px #FFF;
         }
     }
 

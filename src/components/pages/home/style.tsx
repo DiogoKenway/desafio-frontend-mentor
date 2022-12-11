@@ -173,8 +173,8 @@ const BtnExplore = styled.div`
         }
 
         to {
-            transform: scale(1.20);
-            box-shadow: 15px 15px 120px #FFF;
+            transform: scale(1.1);
+            box-shadow: 5px 5px 100px #FFF;
         }
     }
 

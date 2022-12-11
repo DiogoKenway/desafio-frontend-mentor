@@ -7,7 +7,6 @@ import Home from "./components/pages/home";
 import Destination from './components/pages/destination';
 import Crew from './components/pages/crew';
 import Technology from './components/pages/technology';
-import dataApi from './service/data.json';
 
 
 function App() {

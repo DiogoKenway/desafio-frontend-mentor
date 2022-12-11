@@ -23,9 +23,9 @@ const Navbar = ({ currentRoute }: { currentRoute: string }) => {
     useEffect(() => {
         const tl = gsap.timeline();
 
-        // tl.fromTo("#logo", { y: 1500, opacity: 0 }, { y: 0, opacity: 1 }, 2);
-        // tl.fromTo("#line", { x: 1500, opacity: 0 }, { x: 0, opacity: 1 }, 2.1);
-        // tl.fromTo("#navbar", { y: -1500, opacity: 0 }, { y: 0, opacity: 1 }, 2.5);
+        tl.fromTo("#logo", { y: 1500, opacity: 0 }, { y: 0, opacity: 1 }, 2);
+        tl.fromTo("#line", { x: 1500, opacity: 0 }, { x: 0, opacity: 1 }, 2.1);
+        tl.fromTo("#navbar", { y: -1500, opacity: 0 }, { y: 0, opacity: 1 }, 2.5);
     }, [])
 
 
@@ -69,7 +69,7 @@ const Navbar = ({ currentRoute }: { currentRoute: string }) => {
                 <hr id="line" />
             </Logo>
             <MenuMobile id="menu-mobile" onClick={() => setShowMenu(!showMenu)}
-                style={showMenu || width > 450 ? { display: "none" } : { display: "initial" }}
+                style={showMenu ? { display: "none" } : { display: "initial" }}
             >
                 <img src={openIcon}
 

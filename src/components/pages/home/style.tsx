@@ -164,7 +164,7 @@ const BtnExplore = styled.div`
     justify-content: center;
     font-size: clamp(2vw, 1.6rem, 2.8rem);
     animation: pulse 1.5s infinite alternate;
-    z-index: -1;
+    z-index: 3;
 
     @keyframes pulse {
         from {

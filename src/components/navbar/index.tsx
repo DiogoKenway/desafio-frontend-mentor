@@ -26,7 +26,6 @@ const Navbar = ({ currentRoute }: { currentRoute: string }) => {
         tl.fromTo("#logo", { y: 1500, opacity: 0 }, { y: 0, opacity: 1 }, 2);
         tl.fromTo("#line", { x: 1500, opacity: 0 }, { x: 0, opacity: 1 }, 2.1);
         tl.fromTo("#navbar", { y: -1500, opacity: 0 }, { y: 0, opacity: 1 }, 2.5);
-        tl.fromTo("#menu-mobile", { y: -1500, opacity: 0 }, { y: 0, opacity: 1 }, 2.5);
     }, [])
 
 

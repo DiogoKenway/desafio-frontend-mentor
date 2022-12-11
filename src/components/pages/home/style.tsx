@@ -163,7 +163,7 @@ const BtnExplore = styled.div`
     align-items: center;
     justify-content: center;
     font-size: clamp(2vw, 1.6rem, 2.8rem);
-    animation: pulse 1.5s infinite alternate;
+    // animation: pulse 1.5s infinite alternate;
     z-index: 3;
 
     @keyframes pulse {
@@ -174,7 +174,7 @@ const BtnExplore = styled.div`
 
         to {
             transform: scale(1.1);
-            box-shadow: 5px 5px 100px #FFF;
+            box-shadow: 15px 15px 100px #FFF;
         }
     }
 

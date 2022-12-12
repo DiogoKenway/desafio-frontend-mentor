@@ -3,6 +3,7 @@
 <p align="center">
   <a href="#sobre">Sobre</a>
   <a href="#tecnologias">Tecnologias</a>
+  <a href="#instalacao">Instalação</a>
   <a href="#projeto">projeto</a>
 </p>
 
@@ -21,6 +22,21 @@
 - Styled-Components
 - GSAP
 - Glide
+
+<h2 align="center" id="instalacao">Para Rodar o Projeto na maquina</h2>
+
+```sh
+
+  git clone https://github.com/DiogoKenway/desafio-frontend-mentor.git
+  
+  npm install
+  
+  npm run dev
+  
+  
+```
+
+<p>Projeto criado no <a target="_blank" href="https://vitejs.dev/guide/" >VITE</a>!!!</p>
 
 <h2 align="center" id="projeto">PROJETO COMPLETO</h2>
 

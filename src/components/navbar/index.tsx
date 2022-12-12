@@ -69,13 +69,13 @@ const Navbar = ({ currentRoute }: { currentRoute: string }) => {
                 <hr id="line" />
             </Logo>
             <MenuMobile id="menu-mobile" onClick={() => setShowMenu(!showMenu)}
-                style={showMenu ? { display: "none" } : { display: "initial" }}
+                style={showMenu || width > 450 ? { display: "none" } : { display: "initial" }}
             >
                 <img src={openIcon}
 
                     alt="icone para abrir menu" />
             </MenuMobile>
-            <NavigationBar onClick={() => setShowMenu(!showMenu)} id="navbar" style={showMenu || width > 450 ? { right: "0" } : { right: "-100vw" }}>
+            <NavigationBar onClick={() => setShowMenu(!showMenu)} id="navbar" style={showMenu || width > 450 ? { right: "0" } : { right: "-65vw" }}>
                 <CloseIcon onClick={() => setShowMenu(!showMenu)}>
                     <img src={closeIcon}
                         alt="icone de fechar menu"

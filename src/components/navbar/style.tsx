@@ -132,15 +132,15 @@ const NavigationBar = styled.ul`
     @media (max-width: 450px) {
         width: 60%;
         position: fixed;
-        min-height: 100vh;
+        height: 100vh;
         top: 0;
         right: 0;
         flex-direction: column;
         justify-content: flex-start;
         padding-top: 5rem;
         margin: 0;
-        z-index: 5;
-        transition: all .5s ease;
+        z-index: 6;
+        transition: all .6s ease;
         backdrop-filter: blur(25px);
 
         li {

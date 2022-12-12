@@ -23,7 +23,7 @@
 - GSAP
 - Glide
 
-<h2 align="center" id="instalacao">Para Rodar o Projeto na maquina</h2>
+<h2 align="center" id="instalacao">Rodar o Projeto na maquina</h2>
 
 ```sh
 

@@ -23,7 +23,7 @@
 - GSAP
 - Glide
 
-<h2 align="center" id="instalacao">Rodar o Projeto na maquina</h2>
+<h2 align="center" id="instalacao">⚡⚡👌 RODAR PROJETO</h2>
 
 ```sh
 
@@ -38,7 +38,7 @@
 
 <p>Projeto criado no <a target="_blank" href="https://vitejs.dev/guide/" >VITE</a>!!!</p>
 
-<h2 align="center" id="projeto">PROJETO COMPLETO</h2>
+<h2 align="center" id="projeto">🎞PROJETO COMPLETO🎞</h2>
 
 <img src="project-view.gif" title="apresentação do projeto completo"/>
 
